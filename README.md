@@ -18,7 +18,7 @@ State Diagram for Part 1
 	LED4 blinks at 50ms
 	
 State Diagram for Part 2
-![]http://i61.tinypic.com/dfhzc4.jpg)
+![](http://i61.tinypic.com/dfhzc4.jpg)
 	
 	
 3) If user button is pressed,
