@@ -21,7 +21,7 @@
 #define LED6blinkRate   35
 
 
-typedef enum { initial, ON, OFF, CheckButton} State;
+typedef enum { initial, ON, OFF, CheckButton, CheckCount} State;
 
 typedef enum { LED3, LED4, LED5 , LED6} LEDSelection;
 
@@ -77,29 +77,6 @@ void initLED()	// Initialization for LEDs
 	//Init Push Button on PA0
 	HAL_GPIO_Init(GPIOA,&GpioInfo_PortA);
 }
-
-
-
-/*
-void initLED2()
-{
-	GPIO_InitTypeDef GpioInfo ;
-
-	__GPIOG_CLK_ENABLE();
-
-	GpioInfo.Mode = GPIO_MODE_OUTPUT_PP ;
-	GpioInfo.Pin = GPIO_PIN_14 ;
-	GpioInfo.Pull = GPIO_NOPULL ;
-	GpioInfo.Speed = GPIO_SPEED_HIGH ;
-	//GpioInfo.Alternate = GPIO_MODE_AF_PP ;
-
-
-	//Init LED on PG13
-	HAL_GPIO_Init(GPIOG,&GpioInfo);
-}
-
-*/
-
 
 
 uint32_t getCurrentTime()
@@ -158,7 +135,7 @@ void SD_LED3(State *state,int BlinkRate)
 
 
 
-void SD_LED4(State *state,int BlinkRate)
+void SD_LED4(State *state,int *BlinkRate)
 {
 	static uint32_t previousTime = 0;
 
@@ -168,11 +145,11 @@ void SD_LED4(State *state,int BlinkRate)
 					  break;
 
 		case CheckButton : if( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) )
-			                   BlinkRate = 50;
+			                   *BlinkRate = 50;
 			               *state = OFF;
 						   break;
 
-		case OFF : if( getCurrentTime() - previousTime == BlinkRate )
+		case OFF : if( getCurrentTime() - previousTime == *BlinkRate )
 				   {
 					 previousTime = getCurrentTime();
 					 turnOffLED4();
@@ -180,7 +157,7 @@ void SD_LED4(State *state,int BlinkRate)
 				   }
 				   break;
 
-		case ON : if( getCurrentTime() - previousTime == BlinkRate)
+		case ON : if( getCurrentTime() - previousTime == *BlinkRate)
 				  {
 					previousTime = getCurrentTime();
 					turnOnLED4();
@@ -192,14 +169,25 @@ void SD_LED4(State *state,int BlinkRate)
 
 
 
+/*
+ *  LED5 will blinks 5 times when user button is press
+ *  Even if user hold the button, it will still blinks 5 times only
+ *  After release and press again, then will only blinks for another 5 times
+ *
+ */
 void SD_LED5(State *state,int BlinkRate)
 {
 	static uint32_t previousTime = 0;
+	static int count = 0;
 
 	switch(*state)
 	{
-		case initial: *state = OFF;
+		case initial: *state = CheckButton;
 					  break;
+
+		case CheckButton : if( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) )
+					               *state = OFF;
+						   break;
 
 		case OFF : if( getCurrentTime() - previousTime == BlinkRate )
 				   {
@@ -213,9 +201,17 @@ void SD_LED5(State *state,int BlinkRate)
 				  {
 					previousTime = getCurrentTime();
 					turnOnLED5();
-					*state = OFF;
+					*state = CheckCount;
+					count++;
 				  }
 				  break;
+		case CheckCount : if(count <= 5)
+							 *state = OFF;
+						  else
+						  {
+							  if( !( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) ) )		//not sure about this line, have to test on board to verify
+								  *state = initial;
+						  }
 	}
 }
 
@@ -271,10 +267,12 @@ void UMLStateDiagramExmaple()
 	State state_LED5 = initial;  //initialize state for LED5
 	State state_LED6 = initial;  //initialize state for LED6
 
+	int *blinkRate = LED4blinkRate;
+
 	while(1)
 	{
 			SD_LED3(&state_LED3 , LED3blinkRate);	// state machine function for LED3
-			SD_LED4(&state_LED4 , LED4blinkRate);   // state machine function for LED4
+			SD_LED4(&state_LED4 , &blinkRate);   	// state machine function for LED4
 			SD_LED5(&state_LED5 , LED5blinkRate);   // state machine function for LED5
 			SD_LED6(&state_LED6 , LED6blinkRate);   // state machine function for LED6
 	}
