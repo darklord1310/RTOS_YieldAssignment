@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g2 -Map=Test.map -O0 --gc-sections -LC:/Users/Student/CoIDE/workspace/Test -TC:/Users/Student/CoIDE/workspace/Test/stm32f407vg_flash.ld -g">
+      <target file="Test.elf" lastModified="14d66106245">
+         <source file="..\obj\stm32f4xx_hal_gpio.o" lastModified="14d6590e071"/>
+         <source file="..\obj\stm32f4xx_hal_cortex.o" lastModified="14d6590dfc5"/>
+         <source file="..\obj\stm32f4xx_hal_rcc.o" lastModified="14d6590df58"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14d6590e004"/>
+         <source file="..\obj\startup_stm32f429xx.o" lastModified="14d6590de5f"/>
+         <source file="..\obj\stm32f4xx_hal.o" lastModified="14d6590decc"/>
+         <source file="..\obj\main.o" lastModified="14d66106071"/>
+      </target>
+   </processor>
+</history>
