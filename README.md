@@ -6,11 +6,12 @@ This is the first assignment for RTOS subject on blink LED.
 
 There are 3 parts in this assignment:
 
-1) LED3 blinks at 240ms
-   LED4 blinks at 1s
+1)
+	LED3 blinks at 240ms
+	LED4 blinks at 1s
    
 State Diagram for Part 1
-![](http://i60.tinypic.com/ak99jp.jpg)
+![](http://i58.tinypic.com/x6eq6g.jpg)
 
 2) If user button is pressed,
 		
