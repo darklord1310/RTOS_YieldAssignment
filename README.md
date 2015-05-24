@@ -10,7 +10,7 @@ There are 3 parts in this assignment:
    LED4 blinks at 1s
    
    State Diagram for Part 1
-   ![](http://tinypic.com/r/9knrwy/8)
+   ![](http://i62.tinypic.com/9knrwy.jpg)
 
 2) If user button is pressed,
 		
