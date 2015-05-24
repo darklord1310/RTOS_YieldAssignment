@@ -8,6 +8,9 @@ There are 3 parts in this assignment:
 
 1) LED3 blinks at 240ms
    LED4 blinks at 1s
+   
+   State Diagram for Part 1
+   ![](http://tinypic.com/r/9knrwy/8)
 
 2) If user button is pressed,
 		
