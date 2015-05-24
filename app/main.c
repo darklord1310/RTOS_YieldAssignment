@@ -146,6 +146,8 @@ void SD_LED4(State *state,int *BlinkRate)
 
 		case CheckButton : if( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) )
 			                   *BlinkRate = 50;
+						   else
+							   *BlinkRate = LED4blinkRate;
 			               *state = OFF;
 						   break;
 
