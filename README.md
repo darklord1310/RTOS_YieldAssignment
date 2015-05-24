@@ -1,8 +1,8 @@
 
-Project
+RTOS assignment 1
 ===================
 
-This is the first assignment for RTOS subject.
+This is the first assignment for RTOS subject on blink LED.
 
 There are 3 parts in this assignment:
 
