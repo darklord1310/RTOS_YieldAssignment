@@ -37,6 +37,7 @@ void delay(uint32_t delayCycle)
 		previousTime = getCurrentTime();
 }
 
+
 void testingSwitchCase(TaskBlock *tb)
 {
 	static int here = 0;
@@ -64,12 +65,12 @@ int main(void)
 	State state_LED4 = initial;  //initialize state for LED4
 	State state_LED5 = initial;  //initialize state for LED5
 
-	int *blinkRate = LED4blinkRate;
+	int blinkRate = LED4blinkRate;
 
 	while(1)
 	{
-		//SD_LED3(&state_LED3 , LED3blinkRate);	// state machine function for LED3
-		//SD_LED4(&state_LED4 , &blinkRate);   	// state machine function for LED4
+		SD_LED3(&state_LED3 , LED3blinkRate);	// state machine function for LED3
+		SD_LED4(&state_LED4 , &blinkRate);   	// state machine function for LED4
 		SD_LED5(&state_LED5 , LED5blinkRate);   // state machine function for LED5
 	}
 

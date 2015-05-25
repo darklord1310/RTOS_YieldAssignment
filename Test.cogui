@@ -11,28 +11,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Jet/Desktop/RTOS/Test/app/main.c" title="main.c" tooltip="C:/Users/Jet/Desktop/RTOS/Test/app/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Student/CoIDE/workspace/Test/app/main.c" title="main.c" tooltip="C:/Users/Student/CoIDE/workspace/Test/app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4338" selectionTopPixel="2835"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" partName="stm32f4xx_hal_gpio.h" path="C:/Users/Student/CoIDE/workspace/STM32Cube_FW_F4_V1.5.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h" title="stm32f4xx_hal_gpio.h" tooltip="C:/Users/Student/CoIDE/workspace/STM32Cube_FW_F4_V1.5.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/Hardware/stm32f4xx_hal_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11160" selectionTopPixel="3375"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.c" partName="stm32f4xx_hal_gpio.c" path="C:/Users/Student/CoIDE/workspace/STM32Cube_FW_F4_V1.5.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" title="stm32f4xx_hal_gpio.c" tooltip="C:/Users/Student/CoIDE/workspace/STM32Cube_FW_F4_V1.5.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/Hardware/stm32f4xx_hal_gpio.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16894" selectionTopPixel="5955"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f429xx.s" partName="startup_stm32f429xx.s" path="C:/Users/Student/CoIDE/workspace/Test/app/startup_stm32f429xx.s" title="startup_stm32f429xx.s" tooltip="C:/Users/Student/CoIDE/workspace/Test/app/startup_stm32f429xx.s" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/startup_stm32f429xx.s"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="231" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -44,7 +29,7 @@
 <element path="/Test/Hardware"/>
 </expanded>
 <selection>
-<element path="/Test/Hardware/stm32f4xx_hal_gpio.c"/>
+<element path="/Test/LEDsStateMachine.c"/>
 </selection>
 </viewState>
 </view>
@@ -224,159 +209,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/ConfigureLED.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/ConfigureLED.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/LEDsStateMachine.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/LEDsStateMachine.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/Test/startup_stm32f429xx.s"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/Hardware/stm32f4xx_hal_gpio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/Hardware/stm32f4xx_hal_gpio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/ConfigureLED.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/LEDsStateMachine.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/LEDsStateMachine.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Test/LEDsStateMachine.h"/>
 </editors>
-<item historyLabel="startup_stm32f429xx.s" index="1">
+<item historyLabel="LEDsStateMachine.h" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6285" y="0"/>
+<item historyLabel="LEDsStateMachine.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6317" y="0"/>
+<item historyLabel="ConfigureLED.h" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5684" y="0"/>
+<item historyLabel="LEDsStateMachine.h" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5743" y="0"/>
+<item historyLabel="LEDsStateMachine.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5802" y="0"/>
+<item historyLabel="LEDsStateMachine.h" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5861" y="0"/>
+<item historyLabel="LEDsStateMachine.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5937" y="0"/>
+<item historyLabel="ConfigureLED.h" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3192" y="0"/>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3213" y="0"/>
+<item historyLabel="startup_stm32f429xx.s" index="4">
+<position info="not_deleted" x="771" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3243" y="0"/>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3622" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6014" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3714" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3735" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3774" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4316" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6093" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4408" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4429" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4460" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4839" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6172" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4932" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4953" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4983" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5361" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6251" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5937" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3192" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3260" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2826" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2897" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2920" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3622" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6014" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3714" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3791" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_gpio.c" index="2">
-<position info="not_deleted" x="16722" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_gpio.c" index="2">
-<position info="not_deleted" x="16786" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_gpio.c" index="2">
-<position info="not_deleted" x="16873" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_gpio.c" index="2">
+<item historyLabel="stm32f4xx_hal_gpio.c" index="5">
 <position info="not_deleted" x="16894" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3855" y="0"/>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3894" y="0"/>
+<item historyLabel="stm32f4xx_hal_gpio.h" index="6">
+<position info="not_deleted" x="11160" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3927" y="0"/>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4316" y="0"/>
+<item historyLabel="ConfigureLED.h" index="7">
+<position info="not_deleted" x="113" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6093" y="0"/>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4408" y="0"/>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5138" y="0"/>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="470" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="5098" y="0"/>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="1087" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="1087" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="ConfigureLED.h" index="7">
+<position info="not_deleted" x="113" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="1087" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="ConfigureLED.h" index="7">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="888" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="1125" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1254" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="8">
+<position info="not_deleted" x="734" y="30"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1103" y="33"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1254" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1101" y="0"/>
+</item>
+<item historyLabel="ConfigureLED.c" index="1">
+<position info="not_deleted" x="339" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1101" y="0"/>
+</item>
+<item historyLabel="ConfigureLED.h" index="7">
+<position info="not_deleted" x="111" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1101" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1155" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="11">
+<position info="not_deleted" x="790" y="0"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="1155" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="11">
+<position info="not_deleted" x="1125" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.c" index="10">
+<position info="not_deleted" x="2601" y="0"/>
+</item>
+<item historyLabel="LEDsStateMachine.h" index="11">
+<position info="not_deleted" x="1125" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="9">
+<position info="not_deleted" x="1155" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -385,32 +379,41 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f429xx.s" tooltip="Test/startup_stm32f429xx.s">
-<persistable path="/Test/startup_stm32f429xx.s"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LEDsStateMachine.c" tooltip="Test/LEDsStateMachine.c">
+<persistable path="/Test/LEDsStateMachine.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LEDsStateMachine.h" tooltip="Test/LEDsStateMachine.h">
+<persistable path="/Test/LEDsStateMachine.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ConfigureLED.h" tooltip="Test/ConfigureLED.h">
+<persistable path="/Test/ConfigureLED.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ConfigureLED.c" tooltip="Test/ConfigureLED.c">
+<persistable path="/Test/ConfigureLED.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LEDsStateMachine.h" tooltip="Test/Hardware/LEDsStateMachine.h">
+<persistable path="/Test/Hardware/LEDsStateMachine.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LEDsStateMachine.c" tooltip="Test/Hardware/LEDsStateMachine.c">
+<persistable path="/Test/Hardware/LEDsStateMachine.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ConfigureLED.h" tooltip="Test/Hardware/ConfigureLED.h">
+<persistable path="/Test/Hardware/ConfigureLED.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ConfigureLED.c" tooltip="Test/Hardware/ConfigureLED.c">
+<persistable path="/Test/Hardware/ConfigureLED.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.c" tooltip="Test/Hardware/stm32f4xx_hal_gpio.c">
 <persistable path="/Test/Hardware/stm32f4xx_hal_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f429xx.s" tooltip="Test/startup_stm32f429xx.s">
+<persistable path="/Test/startup_stm32f429xx.s"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" tooltip="Test/Hardware/stm32f4xx_hal_gpio.h">
 <persistable path="/Test/Hardware/stm32f4xx_hal_gpio.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Test/main.c">
 <persistable path="/Test/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
-<persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
-<persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
-<persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
-<persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
-<persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Test.coproj" tooltip="C:\Users\Student\CoIDE\workspace\Test\Test.coproj">
 <persistable uri="file:/C:/Users/Student/CoIDE/workspace/Test/Test.coproj"/>
