@@ -1,4 +1,4 @@
-#include "RunningLED.h"
+#include "LEDBlinking.h"
 
 
 
@@ -58,8 +58,8 @@ void LED4(TaskBlock *tb)
 
 void blinkFiveTimes(TaskBlock *tb)
 {
+	static int i = 0;
 	startTask(tb);
-	int i = 0;
 
 	while(1)
 	{
@@ -67,8 +67,6 @@ void blinkFiveTimes(TaskBlock *tb)
 			yield(tb);
 		}
 
-		//if( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) )
-		//{
 			while( i < 5)
 			{
 				turnOnLED5();
@@ -87,7 +85,6 @@ void blinkFiveTimes(TaskBlock *tb)
 
 			while( (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) ) ){
 				yield(tb);
-			//}
 		}
 	}
 	endTask(tb);

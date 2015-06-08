@@ -1,5 +1,5 @@
-#ifndef RunningLED_H
-#define RunningLED_H
+#ifndef LEDBlinking_H
+#define LEDBlinking_H
 
 #include "stm32f4xx_hal.h"
 #include "State.h"
@@ -23,4 +23,4 @@ void LED4(TaskBlock *tb);
 void LED5(TaskBlock *tb);
 void LED6(TaskBlock *tb);
 
-#endif // RunningLED_H
+#endif // LEDBlinking_H

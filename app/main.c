@@ -1,5 +1,5 @@
 #include "ConfigureLEDAndPushButton.h"
-#include "RunningLED.h"
+#include "LEDBlinking.h"
 #include "TimerAndDelay.h"
 #include "LEDBlinkRate.h"
 #include "Yield.h"
@@ -23,17 +23,6 @@ int main(void)
 		blinkFiveTimes(&tbFiveTimes);
 		LED3(&tbLED3);
 		LED4(&tbLED4);
-
-		/*
-		if( HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) )
-		{
-		}
-		else
-		{
-			LED3(&tbLED3);
-			LED4(&tbLED4);
-		}
-		*/
 	}
 	return 0;
 }
