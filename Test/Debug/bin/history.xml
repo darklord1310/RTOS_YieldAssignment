@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.9.3 -mcpu=cortex-m4 -mthumb -g2 -Map=Test.map -O0 --gc-sections -LC:/Users/Jet/CoIDE/workspace/RunningLight -TC:/Users/Jet/CoIDE/workspace/RunningLight/stm32f407vg_flash.ld -g">
-      <target file="Test.elf" lastModified="14dcecadeaf">
+      <target file="Test.elf" lastModified="14dd39b63bd">
          <source file="..\obj\stm32f4xx_hal_cortex.o" lastModified="14dcec3be8f"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="14dcec3beef"/>
          <source file="..\obj\stm32f4xx_hal.o" lastModified="14dcec3bd2d"/>
          <source file="..\obj\stm32f4xx_hal_gpio.o" lastModified="14dcec3bf7b"/>
+         <source file="..\obj\LEDBlinking.o" lastModified="14dd39b61d0"/>
          <source file="..\obj\stm32f4xx_hal_rcc.o" lastModified="14dcec3bde5"/>
          <source file="..\obj\startup_stm32f429xx.o" lastModified="14dcec3bc74"/>
          <source file="..\obj\ConfigureLEDAndPushButton.o" lastModified="14dcec3badb"/>
-         <source file="..\obj\RunningLED.o" lastModified="14dcecadc2d"/>
-         <source file="..\obj\main.o" lastModified="14dcec3bb68"/>
+         <source file="..\obj\main.o" lastModified="14dd39a8da7"/>
          <source file="..\obj\TimerAndDelay.o" lastModified="14dcec3ba62"/>
       </target>
    </processor>

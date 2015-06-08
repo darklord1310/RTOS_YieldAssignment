@@ -4,6 +4,9 @@
       <target file="stm32f4xx_hal_rcc.o" lastModified="14dcec3bde5">
          <source file="..\..\..\..\STM32Cube_FW_F4_V1.5.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c" lastModified="14c0ebff252"/>
       </target>
+      <target file="LEDBlinking.o" lastModified="14dd39b61d0">
+         <source file="..\..\..\app\LEDBlinking.c" lastModified="14dd393e150"/>
+      </target>
       <target file="stm32f4xx_hal.o" lastModified="14dcec3bd2d">
          <source file="..\..\..\..\STM32Cube_FW_F4_V1.5.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" lastModified="14c0ebff2fe"/>
       </target>
@@ -25,8 +28,8 @@
       <target file="stm32f4xx_hal_cortex.o" lastModified="14dcec3be8f">
          <source file="..\..\..\..\STM32Cube_FW_F4_V1.5.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" lastModified="14c0ebff33c"/>
       </target>
-      <target file="main.o" lastModified="14dcec3bb68">
-         <source file="..\..\..\app\main.c" lastModified="14dae40fc20"/>
+      <target file="main.o" lastModified="14dd39a8da7">
+         <source file="..\..\..\app\main.c" lastModified="14dd39437c9"/>
       </target>
       <target file="stm32f4xx_hal_gpio.o" lastModified="14dcec3bf7b">
          <source file="..\..\..\..\STM32Cube_FW_F4_V1.5.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c" lastModified="14c0ebff197"/>
